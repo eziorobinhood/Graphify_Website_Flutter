@@ -225,7 +225,7 @@ class Footer extends StatelessWidget {
                 ),
                 SizedBox(height: 30),
                 Text(
-                  "+91-96777 04249, +91-90428 95697 \ninfo@graphifyinfotech.com",
+                  "+91-96777 04249, \n+91-90428 95697 \ninfo@graphifyinfotech.com",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.grey[700],

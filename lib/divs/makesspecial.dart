@@ -20,8 +20,8 @@ class MakesSpecial extends StatelessWidget {
       width: MediaQuery.of(context).size.width / 2.5,
       height: MediaQuery.of(context).size.height / 3.3,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
+        color: Colors.blueAccent.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),

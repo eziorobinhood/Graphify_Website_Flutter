@@ -18,7 +18,7 @@ class CompanyTweaksDivs extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -32,7 +32,7 @@ class CompanyTweaksDivs extends StatelessWidget {
       height: MediaQuery.of(context).size.height / 1.2,
       padding: const EdgeInsets.all(40),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.network(imageUrl, width: 200, height: 200),

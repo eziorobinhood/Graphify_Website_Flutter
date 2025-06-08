@@ -1,9 +1,12 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:graphify_website/divs/aboutushmv.dart';
 import 'package:graphify_website/divs/appbar.dart';
 import 'package:graphify_website/divs/drawer.dart';
 import 'package:graphify_website/divs/footer.dart';
+import 'package:graphify_website/pages/servicespage.dart';
 import 'package:graphify_website/texts/heading.dart';
 import 'package:graphify_website/texts/paragraph.dart';
 
@@ -42,10 +45,18 @@ class _AboutPageState extends State<AboutPage> {
                           ),
                           SizedBox(height: 20),
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Servicespage(),
+                                ),
+                              );
+                            },
                             style: ElevatedButton.styleFrom(
                               padding: const EdgeInsets.all(20),
-                              backgroundColor: Colors.lightBlueAccent,
+                              backgroundColor: Colors.lightBlueAccent
+                                  .withOpacity(0.1),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(0),
                               ),
@@ -263,7 +274,7 @@ class _AboutPageState extends State<AboutPage> {
                       textheading: "Our History",
                       textcontent:
                           "To be client-centric, technology-driven, adaptive, innovative and creative in our approach for attaining excellence and promoting profitability for our clients and ourselves by delivering best IT solutions and its successful implementation",
-                      manualheight: 2,
+                      manualheight: 1.5,
                       manualwidth: 1.2,
                       imageres: 150,
                     ),
@@ -273,7 +284,7 @@ class _AboutPageState extends State<AboutPage> {
                       textheading: "Our Mission",
                       textcontent:
                           "To be admired as an organization with integrity , ethical in its conduct, professional in its approach, complete dedication and providing cost effective, surpassing their expectations,enhancing their revenues at the same time.",
-                      manualheight: 2,
+                      manualheight: 1.5,
                       manualwidth: 1.2,
                       imageres: 150,
                     ),
@@ -284,7 +295,7 @@ class _AboutPageState extends State<AboutPage> {
                       textheading: "Our Vision",
                       textcontent:
                           "To be client-centric, technology-driven, adaptive, innovative and creative in our approach for attaining excellence and promoting profitability for our clients and ourselves by delivering best IT solutions and its successful implementation",
-                      manualheight: 2,
+                      manualheight: 1.5,
                       manualwidth: 1.2,
                       imageres: 150,
                     ),
@@ -318,7 +329,7 @@ class _AboutPageState extends State<AboutPage> {
                                 textheading: "Quality Products",
                                 textcontent:
                                     "Providing secure and quality products to all your business.",
-                                manualheight: 4.5,
+                                manualheight: 4,
                                 manualwidth: 1.2,
                                 imageres: 50,
                               ),
@@ -328,7 +339,7 @@ class _AboutPageState extends State<AboutPage> {
                                 textheading: "Customer Friendly",
                                 textcontent:
                                     "Helping Customers to meet their requirments and ideas.",
-                                manualheight: 4.5,
+                                manualheight: 4,
                                 manualwidth: 1.2,
                                 imageres: 50,
                               ),
@@ -338,7 +349,7 @@ class _AboutPageState extends State<AboutPage> {
                                 textheading: "Timely Delivery",
                                 textcontent:
                                     "Ensuring quality, accuracy and reliability of deliverables",
-                                manualheight: 4.5,
+                                manualheight: 4,
                                 manualwidth: 1.2,
                                 imageres: 50,
                               ),
@@ -348,7 +359,7 @@ class _AboutPageState extends State<AboutPage> {
                                 textheading: "Innovation",
                                 textcontent:
                                     "Trying new approaches to solve problems in all ways.",
-                                manualheight: 4.5,
+                                manualheight: 4,
                                 manualwidth: 1.2,
                                 imageres: 50,
                               ),
@@ -371,7 +382,7 @@ class _AboutPageState extends State<AboutPage> {
                           imgurl: "images/questions.png",
                           textheading: "Have any question about us?",
                           textcontent: "Don't hesitate to contact us",
-                          manualheight: 3.5,
+                          manualheight: 2.5,
                           manualwidth: 1,
                           imageres: 100,
                         ),

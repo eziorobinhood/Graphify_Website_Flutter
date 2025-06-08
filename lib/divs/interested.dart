@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:graphify_website/pages/contactpage.dart';
 
 class InterestedinGraphify extends StatelessWidget {
   const InterestedinGraphify({super.key});
@@ -44,11 +45,15 @@ class InterestedinGraphify extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ContactUs()),
+                  );
                   // Add your contact action here
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.all(20),
-                  backgroundColor: Colors.lightBlueAccent,
+                  backgroundColor: Colors.lightBlueAccent.withOpacity(0.1),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(0),
                   ),
@@ -116,10 +121,14 @@ class InterestedinGraphifyforMobile extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   // Add your contact action here
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ContactUs()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.all(20),
-                  backgroundColor: Colors.lightBlueAccent,
+                  backgroundColor: Colors.lightBlueAccent.withOpacity(0.2),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(0),
                   ),

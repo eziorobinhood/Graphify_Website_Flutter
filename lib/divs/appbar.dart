@@ -13,17 +13,20 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Colors.blueGrey.withOpacity(0.1),
+      shadowColor: Colors.blueAccent.withOpacity(0.2),
       automaticallyImplyLeading: false,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            padding: const EdgeInsets.all(20.0),
-            child: Image.network(
-              "https://iili.io/3yZ7goJ.md.png",
-              fit: BoxFit.fitHeight,
+            margin: const EdgeInsets.all(20.0),
+            child: Image.asset(
+              "images/Graphifylogo.png",
+              fit: BoxFit.cover,
               width: 250,
+              height: 80,
             ),
           ),
           Container(
@@ -95,6 +98,7 @@ class MobileAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      foregroundColor: Colors.blueAccent.withOpacity(0.2),
       title: Text(title),
       centerTitle: true, // Typically centered for mobile apps
       leading: Builder(
