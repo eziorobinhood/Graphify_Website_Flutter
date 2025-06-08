@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:graphify_website/divs/aboutushmv.dart';
@@ -347,7 +346,7 @@ class _AboutPageState extends State<AboutPage> {
                                 textheading: "Quality Products",
                                 textcontent:
                                     "Providing secure and quality products to all your business.",
-                                manualheight: 4,
+                                manualheight: 2.5,
                                 manualwidth: 1.2,
                                 imageres: 50,
                               ),
@@ -358,7 +357,7 @@ class _AboutPageState extends State<AboutPage> {
                                 textheading: "Customer Friendly",
                                 textcontent:
                                     "Helping Customers to meet their requirments and ideas.",
-                                manualheight: 4,
+                                manualheight: 2.5,
                                 manualwidth: 1.2,
                                 imageres: 50,
                               ),
@@ -369,7 +368,7 @@ class _AboutPageState extends State<AboutPage> {
                                 textheading: "Timely Delivery",
                                 textcontent:
                                     "Ensuring quality, accuracy and reliability of deliverables",
-                                manualheight: 4,
+                                manualheight: 2.5,
                                 manualwidth: 1.2,
                                 imageres: 50,
                               ),
@@ -380,7 +379,7 @@ class _AboutPageState extends State<AboutPage> {
                                 textheading: "Innovation",
                                 textcontent:
                                     "Trying new approaches to solve problems in all ways.",
-                                manualheight: 4,
+                                manualheight: 2.5,
                                 manualwidth: 1.2,
                                 imageres: 50,
                               ),
@@ -404,7 +403,7 @@ class _AboutPageState extends State<AboutPage> {
                               "https://ik.imagekit.io/rrkrish13112001/images/questions.png?updatedAt=1749366049678",
                           textheading: "Have any question about us?",
                           textcontent: "Don't hesitate to contact us",
-                          manualheight: 2.5,
+                          manualheight: 2,
                           manualwidth: 1,
                           imageres: 100,
                         ),
