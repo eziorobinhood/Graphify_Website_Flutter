@@ -420,7 +420,12 @@ class Footermobile extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Privacypolicy()),
+                    );
+                  },
                   child: Text(
                     "Privacy Policy",
                     style: TextStyle(
