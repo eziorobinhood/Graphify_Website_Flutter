@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="graphify_website">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Graphifylogo.PNG"/>
+
+
+  <title>Graphify Infotech</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* For stacking text and spinner */
+            z-index: 9999; /* Ensure it's on top of everything */
+            opacity: 1;
+            transition: opacity 0.5s ease-out; /* Smooth fade-out effect */
+        }
+
+        #loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none; /* Make it unclickable after fading out */
+        }
+
+        /* Updated .loader CSS */
+        .loader {
+            width: 48px;
+            height: 48px;
+            display: inline-block;
+            position: relative;
+        }
+        .loader::after,
+        .loader::before {
+            content: '';
+            width: 48px;
+            height: 48px;
+            border: 2px solid #777; /* White border */
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+            animation: rotation 2s ease-in-out infinite; /* Animation applied here */
+        }
+        .loader::after {
+            border-color: #2a66b3; /* Orange border */
+            animation-delay: 1s; /* Staggered animation */
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* End of updated loader CSS */
+
+        #loading-text {
+            margin-top: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A clear web-safe font */
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+  <div id="loading-overlay">
+        <div class="loader"></div>
+        <div id="loading-text">Loading...</div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            // Flutter injects its content directly into the <body>.
+            // This is where we ensure the Flutter app has started.
+            // Once Flutter is ready to render, we can hide the overlay.
+            _flutter_web_app_ready = function () {
+                const overlay = document.getElementById('loading-overlay');
+                if (overlay) {
+                    overlay.classList.add('hidden');
+                    // Optional: Remove the overlay from DOM after transition
+                    overlay.addEventListener('transitionend', () => {
+                        overlay.remove();
+                    });
+                }
+            };
+
+            // Call this from Dart when the first frame is rendered
+            // This global function will be called from main.dart
+            if (typeof _flutter_web_app_ready === 'function') {
+                // If Flutter is already ready, call it immediately
+                // (Though usually, this is called from Dart after first frame)
+            } else {
+                // Fallback or ensure the function exists if somehow flutter.js is faster
+                // This part might not be strictly necessary with defer on flutter.js,
+                // but good for robustness.
+            }
+        });
+    </script>
+</body>
+</html>
