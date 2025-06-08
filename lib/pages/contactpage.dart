@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:graphify_website/divs/aboutushmv.dart';
 import 'package:graphify_website/divs/appbar.dart';
@@ -74,7 +75,84 @@ $messagesend
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text('Error launching email: $e')));
+      _showEmailFallbackDialog(
+        context,
+        name.text.trim(),
+        mail.text.trim(),
+        message.text.trim(),
+      );
     }
+  }
+
+  void _showEmailFallbackDialog(
+    BuildContext context,
+    String name,
+    String userEmail,
+    String message,
+  ) {
+    const String recipientEmail =
+        'rrkrish123@gmail.com'; // CHANGE THIS TO YOUR RECIPIENT EMAIL
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Cannot Open Email App'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                const Text(
+                  'Your email client could not be opened automatically.',
+                ),
+                const SizedBox(height: 10),
+                const Text(
+                  'Please copy the email address and message below and send it manually:',
+                ),
+                const SizedBox(height: 10),
+                SelectableText(
+                  'To: $recipientEmail',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SelectableText(
+                  'Subject: New Message from Web Contact Form - By $name',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SelectableText('Message:\n$message'),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('Copy Email Address'),
+              onPressed: () {
+                Clipboard.setData(const ClipboardData(text: '$recipientEmail'));
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Email address copied!')),
+                );
+                Navigator.of(context).pop();
+              },
+            ),
+            TextButton(
+              child: const Text('Copy Full Message'),
+              onPressed: () {
+                final String fullEmailContent =
+                    "To: $recipientEmail\nSubject: New Message from Web Contact Form - By $name\n\n$message";
+                Clipboard.setData(ClipboardData(text: fullEmailContent));
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Full message copied!')),
+                );
+                Navigator.of(context).pop();
+              },
+            ),
+            TextButton(
+              child: const Text('OK'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
