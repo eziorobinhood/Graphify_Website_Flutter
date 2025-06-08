@@ -33,7 +33,9 @@ class _HomepageState extends State<Homepage> {
                   height: MediaQuery.of(context).size.height,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("images/homebg.png"),
+                      image: NetworkImage(
+                        "https://ik.imagekit.io/rrkrish13112001/images/homebg.png?updatedAt=1749366038930",
+                      ),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -71,8 +73,8 @@ class _HomepageState extends State<Homepage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      "images/aboutimage.png",
+                    Image.network(
+                      "https://ik.imagekit.io/rrkrish13112001/images/aboutimage.png?updatedAt=1749366009642",
                       width: MediaQuery.of(context).size.width / 3,
                       height: MediaQuery.of(context).size.height / 1.5,
                       fit: BoxFit.cover,
@@ -131,21 +133,24 @@ class _HomepageState extends State<Homepage> {
                           text:
                               "Our team of seasoned software engineering professionals stays ahead of emerging technologies, offering expertise in Software development.",
 
-                          imageUrl: "images/tech_pioneer.png",
+                          imageUrl:
+                              "https://ik.imagekit.io/rrkrish13112001/images/tech_pioneer.png?updatedAt=1749366065329",
                         ),
                         SizedBox(width: 20),
                         CompanyTweaksDivs(
                           heading: "Tailored Engineering",
                           text:
                               "We recognize the unique challenges of each business and engineer customized software solutions to meet your specific requirements.",
-                          imageUrl: "images/tailored_engineering.png",
+                          imageUrl:
+                              "https://ik.imagekit.io/rrkrish13112001/images/tailored_engineering.png?updatedAt=1749366064920",
                         ),
                         SizedBox(width: 20),
                         CompanyTweaksDivs(
                           heading: "Cost-Effective",
                           text:
                               "Our competitive pricing ensures that all businesses can benefit from cutting-edge technology solutions, not just those with extensive resources.",
-                          imageUrl: "images/cost_effective.jpg",
+                          imageUrl:
+                              "https://ik.imagekit.io/rrkrish13112001/images/cost_effective.jpg?updatedAt=1749366004455",
                         ),
                       ],
                     ),
@@ -158,21 +163,24 @@ class _HomepageState extends State<Homepage> {
                           heading: "Driven by Impact",
                           text:
                               "More than just problem-solvers, we are committed to leveraging our technological expertise to effect positive, transformative changes.",
-                          imageUrl: "images/impact_driven.png",
+                          imageUrl:
+                              "https://ik.imagekit.io/rrkrish13112001/images/impact_driven.png?updatedAt=1749366021104",
                         ),
                         SizedBox(width: 20),
                         CompanyTweaksDivs(
                           heading: "Proven Reliability",
                           text:
                               "Our track record confirms our ability to help businesses of all sizes streamline operations, enhance decision-making, and increase productivity.",
-                          imageUrl: "images/reliability.jpg",
+                          imageUrl:
+                              "https://ik.imagekit.io/rrkrish13112001/images/reliability.jpg?updatedAt=1749366054059",
                         ),
                         SizedBox(width: 20),
                         CompanyTweaksDivs(
                           heading: "Innovative Mindset",
                           text:
                               "Our agility and creative thinking allow us to continuously find new and effective ways to employ technology, to meet your needs.",
-                          imageUrl: "images/innovation.jpg",
+                          imageUrl:
+                              "https://ik.imagekit.io/rrkrish13112001/images/innovation.jpg?updatedAt=1749366021589",
                         ),
                       ],
                     ),
@@ -197,12 +205,14 @@ class _HomepageState extends State<Homepage> {
                             children: [
                               ServicesDivs(
                                 divtext: 'Web Development',
-                                networkURL: "images/icons/web.png",
+                                networkURL:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/web.png?updatedAt=1749366086589",
                               ),
                               SizedBox(width: 20),
                               ServicesDivs(
                                 divtext: 'Mobile App Development',
-                                networkURL: "images/icons/appdev.png",
+                                networkURL:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/appdev.png?updatedAt=1749366077824",
                               ),
                             ],
                           ),
@@ -212,12 +222,14 @@ class _HomepageState extends State<Homepage> {
                             children: [
                               ServicesDivs(
                                 divtext: 'Digital Marketing',
-                                networkURL: "images/icons/digitalmarketing.png",
+                                networkURL:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/digitalmarketing.png?updatedAt=1749366077862",
                               ),
                               SizedBox(width: 20),
                               ServicesDivs(
                                 divtext: 'Branding',
-                                networkURL: "images/icons/brand.png",
+                                networkURL:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/brand.png?updatedAt=1749366078039",
                               ),
                             ],
                           ),
@@ -227,12 +239,14 @@ class _HomepageState extends State<Homepage> {
                             children: [
                               ServicesDivs(
                                 divtext: 'Search Engine Optimization',
-                                networkURL: "images/icons/seo.png",
+                                networkURL:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/seo.png?updatedAt=1749366085928",
                               ),
                               SizedBox(width: 20),
                               ServicesDivs(
                                 divtext: 'Social Media Management',
-                                networkURL: "images/icons/socialmedia.png",
+                                networkURL:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/socialmedia.png?updatedAt=1749366086124",
                               ),
                             ],
                           ),
@@ -268,14 +282,16 @@ class _HomepageState extends State<Homepage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               MakesSpecial(
-                                imgurl: "images/icons/team.png",
+                                imgurl:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/team.png?updatedAt=1749366086526",
                                 textheading: "Highly Qualified Team",
                                 textcontent:
                                     "We have a highly qualified team to help our customers to meet their expectations and requirements.",
                               ),
                               SizedBox(width: 20),
                               MakesSpecial(
-                                imgurl: "images/icons/targeting.png",
+                                imgurl:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/targeting.png?updatedAt=1749366087041",
                                 textheading: "Customer-Centric Approach",
                                 textcontent:
                                     "We prioritize our customers' needs and work closely with them to deliver tailored solutions.",
@@ -288,14 +304,16 @@ class _HomepageState extends State<Homepage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               MakesSpecial(
-                                imgurl: "images/icons/shield.png",
+                                imgurl:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/shield.png?updatedAt=1749366085637",
                                 textheading: "Security and Reliability",
                                 textcontent:
                                     "We prioritize security and reliability in all our solutions, ensuring your data is safe and your systems are dependable.",
                               ),
                               SizedBox(width: 20),
                               MakesSpecial(
-                                imgurl: "images/icons/established.png",
+                                imgurl:
+                                    "https://ik.imagekit.io/rrkrish13112001/images/icons/established.png?updatedAt=1749366080733",
                                 textheading: "Proven Track Record",
                                 textcontent:
                                     "Our proven track record of successful projects speaks for our commitment to excellence.",
@@ -318,7 +336,7 @@ class _HomepageState extends State<Homepage> {
           ),
         )
         : Scaffold(
-          appBar: MobileAppBar(title: "Homepage"),
+          appBar: MobileAppBar(title: "Home"),
           body: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Column(
@@ -329,7 +347,9 @@ class _HomepageState extends State<Homepage> {
                   height: MediaQuery.of(context).size.height / 1.5,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("images/homemobile.jpg"),
+                      image: NetworkImage(
+                        "https://ik.imagekit.io/rrkrish13112001/images/homemobile.jpg?updatedAt=1749366032834",
+                      ),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -366,7 +386,7 @@ class _HomepageState extends State<Homepage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.network(
-                      "images/aboutimage.png",
+                      "https://ik.imagekit.io/rrkrish13112001/images/aboutimage.png?updatedAt=1749366009642",
                       width: MediaQuery.of(context).size.width / 1.2,
                       height: MediaQuery.of(context).size.height / 2,
                       fit: BoxFit.cover,
@@ -374,7 +394,7 @@ class _HomepageState extends State<Homepage> {
                     const SizedBox(height: 50),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.indigoAccent.withOpacity(0.1),
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
@@ -420,42 +440,48 @@ class _HomepageState extends State<Homepage> {
                       text:
                           "Our team of seasoned software engineering professionals stays ahead of emerging technologies, offering expertise in Software development.",
 
-                      imageUrl: "images/tech_pioneer.png",
+                      imageUrl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/tech_pioneer.png?updatedAt=1749366065329",
                     ),
                     SizedBox(height: 20),
                     CompanyTweaksForMobile(
                       heading: "Tailored Engineering",
                       text:
                           "We recognize the unique challenges of each business and engineer customized software solutions to meet your specific requirements.",
-                      imageUrl: "images/tailored_engineering.png",
+                      imageUrl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/tailored_engineering.png?updatedAt=1749366064920",
                     ),
                     SizedBox(height: 20),
                     CompanyTweaksForMobile(
                       heading: "Cost-Effective",
                       text:
                           "Our competitive pricing ensures that all businesses can benefit from cutting-edge technology solutions, not just those with extensive resources.",
-                      imageUrl: "images/cost_effective.jpg",
+                      imageUrl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/cost_effective.jpg?updatedAt=1749366004455",
                     ),
                     SizedBox(height: 20),
                     CompanyTweaksForMobile(
                       heading: "Driven by Impact",
                       text:
                           "More than just problem-solvers, we are committed to leveraging our technological expertise to effect positive, transformative changes.",
-                      imageUrl: "images/impact_driven.png",
+                      imageUrl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/impact_driven.png?updatedAt=1749366021104",
                     ),
                     SizedBox(height: 20),
                     CompanyTweaksForMobile(
                       heading: "Proven Reliability",
                       text:
                           "Our track record confirms our ability to help businesses of all sizes streamline operations, enhance decision-making, and increase productivity.",
-                      imageUrl: "images/reliability.jpg",
+                      imageUrl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/reliability.jpg?updatedAt=1749366054059",
                     ),
                     SizedBox(height: 20),
                     CompanyTweaksForMobile(
                       heading: "Innovative Mindset",
                       text:
                           "Our agility and creative thinking allow us to continuously find new and effective ways to employ technology, to meet your needs.",
-                      imageUrl: "images/innovation.jpg",
+                      imageUrl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/innovation.jpg?updatedAt=1749366021589",
                     ),
                   ],
                 ),
@@ -471,34 +497,40 @@ class _HomepageState extends State<Homepage> {
                     SizedBox(height: 20),
                     Servicesformobile(
                       divtext: 'Web Development',
-                      networkURL: "images/icons/web.png",
+                      networkURL:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/web.png?updatedAt=1749366086589",
                     ),
                     SizedBox(height: 20),
                     Servicesformobile(
                       divtext: 'Mobile App Development',
-                      networkURL: "images/icons/appdev.png",
+                      networkURL:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/appdev.png?updatedAt=1749366077824",
                     ),
 
                     SizedBox(height: 20),
                     Servicesformobile(
                       divtext: 'Digital Marketing',
-                      networkURL: "images/icons/digitalmarketing.png",
+                      networkURL:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/digitalmarketing.png?updatedAt=1749366077862",
                     ),
                     SizedBox(height: 20),
                     Servicesformobile(
                       divtext: 'Branding',
-                      networkURL: "images/icons/brand.png",
+                      networkURL:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/brand.png?updatedAt=1749366078039",
                     ),
 
                     SizedBox(height: 20),
                     Servicesformobile(
                       divtext: 'Search Engine Optimization',
-                      networkURL: "images/icons/seo.png",
+                      networkURL:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/seo.png?updatedAt=1749366085928",
                     ),
                     SizedBox(height: 20),
                     Servicesformobile(
                       divtext: 'Social Media Management',
-                      networkURL: "images/icons/socialmedia.png",
+                      networkURL:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/socialmedia.png?updatedAt=1749366086124",
                     ),
                   ],
                 ),
@@ -510,21 +542,24 @@ class _HomepageState extends State<Homepage> {
                     Headingformobile(headingtext: "What Makes Us Special:"),
                     SizedBox(height: 20),
                     MakesspecialforMobile(
-                      imgurl: "images/icons/targeting.png",
+                      imgurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/support.png?updatedAt=1749366058715",
                       textheading: "Customer Support",
                       textcontent:
                           "We are providing dedicated and easily accessible 24/7 customer support to all clients.",
                     ),
                     SizedBox(height: 20),
                     MakesspecialforMobile(
-                      imgurl: "images/icons/established.png",
+                      imgurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/established.png?updatedAt=1749366080733",
                       textheading: "Proven Track Record",
                       textcontent:
                           "Our proven track record of successful projects speaks for our commitment to excellence.",
                     ),
                     SizedBox(height: 20),
                     MakesspecialforMobile(
-                      imgurl: "images/icons/shield.png",
+                      imgurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/shield.png?updatedAt=1749366085637",
                       textheading: "Security and Reliability",
                       textcontent:
                           "We prioritize security and reliability in all our solutions, ensuring your data is safe and your systems are dependable.",

@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:graphify_website/pages/contactpage.dart';
 
 class Aboutushmv extends StatelessWidget {
   final String imgurl;
@@ -26,7 +27,7 @@ class Aboutushmv extends StatelessWidget {
       width: MediaQuery.of(context).size.width / manualwidth,
       height: MediaQuery.of(context).size.height / manualheight,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.cyanAccent.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
@@ -112,7 +113,7 @@ class Aboutushmvwithbtnformobile extends StatelessWidget {
       height: MediaQuery.of(context).size.height / manualheight,
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -126,7 +127,7 @@ class Aboutushmvwithbtnformobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
+          Image.network(
             imgurl,
             fit: BoxFit.cover,
             width: imageres,
@@ -167,10 +168,15 @@ class Aboutushmvwithbtnformobile extends StatelessWidget {
           ),
           SizedBox(width: 10),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ContactUs()),
+              );
+            },
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.all(20),
-              backgroundColor: Colors.lightBlueAccent,
+              backgroundColor: Colors.blueGrey.withOpacity(0.1),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0),
               ),
@@ -216,7 +222,7 @@ class Aboutushmvwithbtn extends StatelessWidget {
       width: MediaQuery.of(context).size.width / manualwidth,
       height: MediaQuery.of(context).size.height / manualheight,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.deepPurpleAccent.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
@@ -231,7 +237,7 @@ class Aboutushmvwithbtn extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
+          Image.network(
             imgurl,
             fit: BoxFit.cover,
             width: imageres,
@@ -272,10 +278,15 @@ class Aboutushmvwithbtn extends StatelessWidget {
           ),
           SizedBox(width: 10),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ContactUs()),
+              );
+            },
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.all(20),
-              backgroundColor: Colors.lightBlueAccent,
+              backgroundColor: Colors.lightGreenAccent.withOpacity(0.1),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0),
               ),
@@ -320,8 +331,8 @@ class Aboutushmvmobileview extends StatelessWidget {
       width: MediaQuery.of(context).size.width / manualwidth,
       height: MediaQuery.of(context).size.height / manualheight,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
+        color: Colors.cyanAccent.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -335,7 +346,7 @@ class Aboutushmvmobileview extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
+          Image.network(
             imgurl,
             fit: BoxFit.cover,
             width: imageres,

@@ -107,7 +107,8 @@ $messagesend
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Aboutushmv(
-                        imgurl: "https://iili.io/3yDjdEN.md.png",
+                        imgurl:
+                            "https://ik.imagekit.io/rrkrish13112001/images/call.png?updatedAt=1749365993602",
                         textheading: "Drop us a Call",
                         textcontent: "+91-96777 04249 \n+91-90428 95697",
                         manualheight: 2.5,
@@ -116,7 +117,8 @@ $messagesend
                       ),
                       SizedBox(width: 30),
                       Aboutushmv(
-                        imgurl: "https://iili.io/3yD8hfj.md.png",
+                        imgurl:
+                            "https://ik.imagekit.io/rrkrish13112001/images/email.png?updatedAt=1749366006684",
                         textheading: "Send us a Mail",
                         textcontent: "info@graphifyinfotech.com",
                         manualheight: 2.5,
@@ -125,7 +127,8 @@ $messagesend
                       ),
                       SizedBox(width: 30),
                       Aboutushmv(
-                        imgurl: "https://iili.io/3yDMRP1.md.png",
+                        imgurl:
+                            "https://ik.imagekit.io/rrkrish13112001/images/destination.png?updatedAt=1749365999557",
                         textheading: "Meet us at",
                         textcontent:
                             "Graphify Infotech, 36D, Veerakeralam Road, \nVadavalli,Thirumurugan Nagar, \nCoimbatore, TamilNadu - 641041, India.",
@@ -159,8 +162,8 @@ $messagesend
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      "images/callpic.png",
+                    Image.network(
+                      "https://ik.imagekit.io/rrkrish13112001/images/callpic.png?updatedAt=1749366010387",
                       height: MediaQuery.of(context).size.height / 1.5,
                     ),
                     Container(
@@ -201,7 +204,8 @@ $messagesend
                             },
                             style: ElevatedButton.styleFrom(
                               padding: const EdgeInsets.all(20),
-                              backgroundColor: Colors.lightBlueAccent,
+                              backgroundColor: Colors.lightBlueAccent
+                                  .withOpacity(0.1),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(0),
                               ),
@@ -221,6 +225,7 @@ $messagesend
                     ),
                   ],
                 ),
+                SizedBox(height: 30),
                 Footer(),
               ],
             ),
@@ -234,15 +239,16 @@ $messagesend
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset(
-                  "images/contactimage.png",
+                Image.network(
+                  "https://ik.imagekit.io/rrkrish13112001/images/contactimage.png?updatedAt=1749366000641",
                   height: MediaQuery.of(context).size.height / 3,
                   width: MediaQuery.of(context).size.width / 1,
                 ),
                 Container(
                   margin: EdgeInsets.fromLTRB(20, 10, 20, 0),
                   child: Aboutushmvmobileview(
-                    imgurl: "images/call.png",
+                    imgurl:
+                        "https://ik.imagekit.io/rrkrish13112001/images/call.png?updatedAt=1749365993602",
                     textheading: "Drop us a Call",
                     textcontent: "+91-96777 04249 \n+91-90428 95697",
                     manualheight: 4,
@@ -254,7 +260,8 @@ $messagesend
                 Container(
                   margin: EdgeInsets.fromLTRB(20, 0, 20, 10),
                   child: Aboutushmvmobileview(
-                    imgurl: "images/email.png",
+                    imgurl:
+                        "https://ik.imagekit.io/rrkrish13112001/images/email.png?updatedAt=1749366006684",
                     textheading: "Send us a Mail",
                     textcontent: "info@graphifyinfotech.com",
                     manualheight: 4,
@@ -266,7 +273,8 @@ $messagesend
                 Container(
                   margin: EdgeInsets.fromLTRB(20, 0, 20, 0),
                   child: Aboutushmvmobileview(
-                    imgurl: "images/destination.png",
+                    imgurl:
+                        "https://ik.imagekit.io/rrkrish13112001/images/destination.png?updatedAt=1749365999557",
                     textheading: "Meet us at",
                     textcontent:
                         "Graphify Infotech, 36D, Veerakeralam Road, \nVadavalli,Thirumurugan Nagar, \nCoimbatore, TamilNadu - 641041, India.",
@@ -333,6 +341,7 @@ $messagesend
                     ],
                   ),
                 ),
+                SizedBox(height: 30),
                 Footermobile(),
               ],
             ),

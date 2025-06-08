@@ -47,9 +47,9 @@ class Servicespagediv extends StatelessWidget {
                 ),
               ),
             ),
-            leading: Image.asset(iconurl, width: 50, height: 50),
+            leading: Image.network(iconurl, width: 50, height: 50),
             children: [
-              Image.asset(imageurl, width: 150, height: 150),
+              Image.network(imageurl, width: 150, height: 150),
               Container(
                 padding: EdgeInsets.all(20),
                 child: Text(
@@ -116,9 +116,9 @@ class Servicesdivformobile extends StatelessWidget {
                 ),
               ),
             ),
-            leading: Image.asset(iconurl, width: 30, height: 30),
+            leading: Image.network(iconurl, width: 30, height: 30),
             children: [
-              Image.asset(imageurl, width: 150, height: 150),
+              Image.network(imageurl, width: 150, height: 150),
               Container(
                 padding: EdgeInsets.all(20),
                 child: Text(

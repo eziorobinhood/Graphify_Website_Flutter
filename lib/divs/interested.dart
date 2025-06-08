@@ -13,8 +13,8 @@ class InterestedinGraphify extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
-            "images/interested.png",
+          Image.network(
+            "https://ik.imagekit.io/rrkrish13112001/images/interested.png?updatedAt=1749366037916",
             width: MediaQuery.of(context).size.width / 2.5,
           ),
           const SizedBox(height: 20),
@@ -87,8 +87,8 @@ class InterestedinGraphifyforMobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
-            "images/interested.png",
+          Image.network(
+            "https://ik.imagekit.io/rrkrish13112001/images/interested.png?updatedAt=1749366037916",
             width: MediaQuery.of(context).size.width / 2,
           ),
           const SizedBox(height: 20),
@@ -98,6 +98,7 @@ class InterestedinGraphifyforMobile extends StatelessWidget {
             children: [
               Text(
                 'Interested in working with Graphify?',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,

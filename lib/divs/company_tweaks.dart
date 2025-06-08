@@ -79,7 +79,7 @@ class CompanyTweaksForMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.blueAccent.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(

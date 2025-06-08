@@ -29,7 +29,7 @@ class ServicesDivs extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Image.asset(networkURL, width: 30, height: 30),
+          Image.network(networkURL, width: 30, height: 30),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -60,7 +60,7 @@ class Servicesformobile extends StatelessWidget {
       width: MediaQuery.of(context).size.width / 1.2,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.limeAccent.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(

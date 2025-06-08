@@ -16,7 +16,9 @@ class Footer extends StatelessWidget {
       padding: EdgeInsets.all(30),
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("images/footerbg.jpg"),
+          image: NetworkImage(
+            "https://ik.imagekit.io/rrkrish13112001/images/footerbg.jpg?updatedAt=1749366008925",
+          ),
           fit: BoxFit.cover,
         ),
       ),
@@ -30,7 +32,9 @@ class Footer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset("images/Graphifylogo.png"),
+                Image.network(
+                  "https://ik.imagekit.io/rrkrish13112001/images/Graphifylogo.png?updatedAt=1749366013146",
+                ),
                 SizedBox(height: 30),
                 Text(
                   "Graphify offer various kinds of products and services to the public and business firms to boost up their portfolio level. We nurture personal growth for our team by creating a challenging environment with opportunities.",
@@ -241,32 +245,32 @@ class Footer extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset(
-                        "images/facebook.png",
+                      icon: Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/facebook.png?updatedAt=1749366007067",
                         width: 30,
                         height: 30,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset(
-                        "images/instagram.png",
+                      icon: Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/instagram.png?updatedAt=1749366023435",
                         width: 30,
                         height: 30,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset(
-                        "images/linkedin.png",
+                      icon: Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/linkedin.png?updatedAt=1749366031924",
                         width: 30,
                         height: 30,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset(
-                        "images/twitter.png",
+                      icon: Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/twitter.png?updatedAt=1749366070727",
                         width: 30,
                         height: 30,
                       ),
@@ -291,7 +295,9 @@ class Footermobile extends StatelessWidget {
       padding: EdgeInsets.all(30),
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("images/footerbgmobile.jpg"),
+          image: NetworkImage(
+            "https://ik.imagekit.io/rrkrish13112001/images/footerbgmobile.jpg?updatedAt=1749369388174",
+          ),
           fit: BoxFit.cover,
         ),
       ),
@@ -305,7 +311,9 @@ class Footermobile extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset("images/Graphifylogo.png"),
+                Image.network(
+                  "https://ik.imagekit.io/rrkrish13112001/images/Graphifylogo.png?updatedAt=1749366013146",
+                ),
                 SizedBox(height: 30),
                 Text(
                   "Graphify offer various kinds of products and services to the public and business firms to boost up their portfolio level. We nurture personal growth for our team by creating a challenging environment with opportunities.",
@@ -513,32 +521,32 @@ class Footermobile extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset(
-                        "images/facebook.png",
+                      icon: Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/facebook.png?updatedAt=1749366007067",
                         width: 30,
                         height: 30,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset(
-                        "images/instagram.png",
+                      icon: Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/instagram.png?updatedAt=1749366023435",
                         width: 30,
                         height: 30,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset(
-                        "images/linkedin.png",
+                      icon: Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/linkedin.png?updatedAt=1749366031924",
                         width: 30,
                         height: 30,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset(
-                        "images/twitter.png",
+                      icon: Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/twitter.png?updatedAt=1749366070727",
                         width: 30,
                         height: 30,
                       ),

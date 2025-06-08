@@ -35,7 +35,7 @@ class MakesSpecial extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(imgurl, fit: BoxFit.cover, width: 50, height: 50),
+          Image.network(imgurl, fit: BoxFit.cover, width: 50, height: 50),
           SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,9 +91,9 @@ class MakesspecialforMobile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       width: MediaQuery.of(context).size.width / 1.2,
-      height: MediaQuery.of(context).size.height / 2.5,
+      height: MediaQuery.of(context).size.height / 2.3,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.tealAccent.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
@@ -108,7 +108,7 @@ class MakesspecialforMobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(imgurl, fit: BoxFit.cover, width: 100, height: 100),
+          Image.network(imgurl, fit: BoxFit.cover, width: 100, height: 100),
           SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,

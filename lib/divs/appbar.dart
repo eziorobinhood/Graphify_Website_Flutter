@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:graphify_website/home.dart';
 
 import 'package:graphify_website/pages/aboutpage.dart';
@@ -13,7 +14,7 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.blueGrey.withOpacity(0.1),
+      backgroundColor: Colors.blueGrey.withOpacity(0.6),
       shadowColor: Colors.blueAccent.withOpacity(0.2),
       automaticallyImplyLeading: false,
       title: Row(
@@ -42,7 +43,14 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
                       MaterialPageRoute(builder: (context) => Homepage()),
                     );
                   },
-                  child: Text("Home"),
+                  child: Text(
+                    "Home",
+                    style: TextStyle(
+                      fontFamily: GoogleFonts.gabarito().fontFamily,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 18,
+                    ),
+                  ),
                 ),
                 TextButton(
                   onPressed: () {
@@ -51,7 +59,14 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
                       MaterialPageRoute(builder: (context) => AboutPage()),
                     );
                   },
-                  child: Text("About Us"),
+                  child: Text(
+                    "About Us",
+                    style: TextStyle(
+                      fontFamily: GoogleFonts.gabarito().fontFamily,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 18,
+                    ),
+                  ),
                 ),
                 TextButton(
                   onPressed: () {
@@ -60,7 +75,14 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
                       MaterialPageRoute(builder: (context) => Servicespage()),
                     );
                   },
-                  child: Text("Services"),
+                  child: Text(
+                    "Services",
+                    style: TextStyle(
+                      fontFamily: GoogleFonts.gabarito().fontFamily,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 18,
+                    ),
+                  ),
                 ),
                 TextButton(
                   onPressed: () {
@@ -69,7 +91,14 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
                       MaterialPageRoute(builder: (context) => ContactUs()),
                     );
                   },
-                  child: Text("Contact Us"),
+                  child: Text(
+                    "Contact Us",
+                    style: TextStyle(
+                      fontFamily: GoogleFonts.gabarito().fontFamily,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 18,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -98,7 +127,9 @@ class MobileAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      foregroundColor: Colors.blueAccent.withOpacity(0.2),
+      backgroundColor: Colors.blueGrey.withOpacity(
+        0.6,
+      ), // Semi-transparent background
       title: Text(title),
       centerTitle: true, // Typically centered for mobile apps
       leading: Builder(

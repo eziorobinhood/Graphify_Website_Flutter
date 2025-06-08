@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "8fb08f6bba26f40f5f718a80bb17a93a",
-"assets/AssetManifest.bin.json": "4493729aef0765906c9cc69de7a6a20a",
-"assets/AssetManifest.json": "d16764ddfc6631a9b4ebc50c7ba76426",
+const RESOURCES = {"assets/AssetManifest.bin": "2ee90a871323c17ceff2b3a6805606ce",
+"assets/AssetManifest.bin.json": "c3914417fdb2f09025ccd572625def8e",
+"assets/AssetManifest.json": "7986ff21a8e812c604be9f0f9d017689",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "1c59ec71788354c71fa8d63ab5dd2082",
 "assets/images/aboutimage.jpg": "e007b5e9637222e81d1a229ca84821fb",
@@ -23,7 +23,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "8fb08f6bba26f40f5f718a80bb17a93a
 "assets/images/email.png": "2ff3686d478e2ac2e489ca8ca3f1e7ca",
 "assets/images/facebook.png": "7360ffe3672898b3df4896f0e1128c22",
 "assets/images/footerbg.jpg": "4380cb75d92d4356f2fcbf35fd8a68d0",
-"assets/images/footerbgmobile.jpg": "6e82c85654f6b6925f6333f1f9b2c16a",
+"assets/images/footerbgmobile.jpg": "54412d2253eb43aa01947258ca0f87a3",
 "assets/images/Graphifylogo.png": "a79682d0ac58d8c4fe2c44c73b611f20",
 "assets/images/history.jpg": "e7cd8265082eb83223207edf902f3bd0",
 "assets/images/history.png": "b53fad8cd0ab2c297023de592133cb14",
@@ -70,6 +70,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "8fb08f6bba26f40f5f718a80bb17a93a
 "assets/images/time.png": "b47bfd7b33651b8094d375a9e768698c",
 "assets/images/twitter.png": "00e1685acb78b5c2a6189a43c8df3e6e",
 "assets/images/vision.jpg": "c99ab793d3c5fcd23419101a5b689938",
+"assets/images/vision.png": "2671b2060a4eb73f9249497eaffbfa5b",
 "assets/images/Webdev.jpg": "33bd0bdff5cb1b184c6def34b5df3292",
 "assets/images/whychooseus.jpg": "c7211bb39da85cf17e4a486f77c37242",
 "assets/images/whychooseus.png": "c6c0d4fd6a425f8022fcc5b491b21e84",
@@ -90,14 +91,14 @@ const RESOURCES = {"assets/AssetManifest.bin": "8fb08f6bba26f40f5f718a80bb17a93a
 "canvaskit/skwasm_st.wasm": "56c3973560dfcbf28ce47cebe40f3206",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "76f08d47ff9f5715220992f993002504",
-"flutter_bootstrap.js": "2f923566edfce540542dd685d94c0610",
+"flutter_bootstrap.js": "95510a4020c864a41772c4520bdc398b",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "c2ef4fdc334c089d7674995fe5253250",
 "/": "c2ef4fdc334c089d7674995fe5253250",
-"main.dart.js": "e4b3c74aabd2b92b7ad25c68c0852700",
+"main.dart.js": "eff01df3b0f300a8c4503b5f89940ce1",
 "manifest.json": "213c497a2b08d9feb0178092bce49344",
 "version.json": "56484ed8b62a0b42d6361db0a86656a1"};
 // The application shell files that are downloaded before a service worker can

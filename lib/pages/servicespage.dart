@@ -3,8 +3,7 @@ import 'package:graphify_website/divs/appbar.dart';
 import 'package:graphify_website/divs/drawer.dart';
 import 'package:graphify_website/divs/footer.dart';
 import 'package:graphify_website/divs/servicespagediv.dart';
-import 'package:graphify_website/home.dart';
-import 'package:graphify_website/pages/aboutpage.dart';
+
 import 'package:graphify_website/texts/heading.dart';
 
 class Servicespage extends StatefulWidget {
@@ -35,8 +34,8 @@ class _ServicespageState extends State<Servicespage> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Image.asset(
-                        "images/services.png",
+                      Image.network(
+                        "https://ik.imagekit.io/rrkrish13112001/images/services.png?updatedAt=1749366068093",
                         width: MediaQuery.of(context).size.width / 3,
                         height: MediaQuery.of(context).size.height / 1,
                       ),
@@ -47,8 +46,10 @@ class _ServicespageState extends State<Servicespage> {
                             headingtext: "Web Development",
                             contenttext:
                                 "Web development can range from developing the simplest static single page of plain text to the most complex web-based and social network services.",
-                            imageurl: "images/Webdev.jpg",
-                            iconurl: "images/icons/web.png",
+                            imageurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/Webdev.jpg?updatedAt=1749366079140",
+                            iconurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/icons/web.png?updatedAt=1749366086589",
                           ),
                           SizedBox(height: 30),
 
@@ -56,40 +57,50 @@ class _ServicespageState extends State<Servicespage> {
                             headingtext: "Mobile App Development",
                             contenttext:
                                 "Our skilled mobile app designers with talent in design field create exquisite apps will make solid impression among clients.",
-                            imageurl: "images/mad.jpg",
-                            iconurl: "images/icons/appdev.png",
+                            imageurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/mad.jpg?updatedAt=1749366035807",
+                            iconurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/icons/appdev.png?updatedAt=1749366077824",
                           ),
                           SizedBox(height: 30),
                           Servicespagediv(
                             headingtext: "Digital Marketing",
                             contenttext:
                                 "Providing platform subject to experience with powerful cycle of project development with cost effective and time frame.",
-                            imageurl: "images/digimarket.jpg",
-                            iconurl: "images/icons/digitalmarketing.png",
+                            imageurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/digimarket.jpg?updatedAt=1749366010461",
+                            iconurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/icons/digitalmarketing.png?updatedAt=1749366077862",
                           ),
                           SizedBox(height: 30),
                           Servicespagediv(
                             headingtext: "Branding",
                             contenttext:
                                 "We manage the overall promotional activities, listings outside the website, content distribution, quality link building, product or service reviews etc.",
-                            imageurl: "images/branding.jpg",
-                            iconurl: "images/icons/brand.png",
+                            imageurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/branding.jpg?updatedAt=1749365998915",
+                            iconurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/icons/brand.png?updatedAt=1749366078039",
                           ),
                           SizedBox(height: 30),
                           Servicespagediv(
                             headingtext: "Search Engine Optimization",
                             contenttext:
                                 "Our skilled mobile app designers with talent in design field create exquisite apps will make solid impression among clients.",
-                            imageurl: "images/SEO.jpg",
-                            iconurl: "images/icons/seo.png",
+                            imageurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/SEO.jpg?updatedAt=1749366054507",
+                            iconurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/icons/seo.png?updatedAt=1749366085928",
                           ),
                           SizedBox(height: 30),
                           Servicespagediv(
                             headingtext: "Social Media Management",
                             contenttext:
                                 "We help you build and maintain a strong presence across social media platforms, engaging your audience and growing your brand online.",
-                            imageurl: "images/SMM.jpg",
-                            iconurl: "images/icons/socialmedia.png",
+                            imageurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/SMM.jpg?updatedAt=1749366062049",
+                            iconurl:
+                                "https://ik.imagekit.io/rrkrish13112001/images/icons/socialmedia.png?updatedAt=1749366086124",
                           ),
                         ],
                       ),
@@ -110,8 +121,8 @@ class _ServicespageState extends State<Servicespage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset(
-                  "images/servicesmob.png",
+                Image.network(
+                  "https://ik.imagekit.io/rrkrish13112001/images/services.png?updatedAt=1749366068093",
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height / 2,
                 ),
@@ -122,8 +133,10 @@ class _ServicespageState extends State<Servicespage> {
                       headingtext: "Web Development",
                       contenttext:
                           "Web development can range from developing the simplest static single page of plain text to the most complex web-based and social network services.",
-                      imageurl: "images/Webdev.jpg",
-                      iconurl: "images/icons/web.png",
+                      imageurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/Webdev.jpg?updatedAt=1749366079140",
+                      iconurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/web.png?updatedAt=1749366086589",
                     ),
                     SizedBox(height: 30),
 
@@ -131,40 +144,50 @@ class _ServicespageState extends State<Servicespage> {
                       headingtext: "Mobile App Development",
                       contenttext:
                           "Our skilled mobile app designers with talent in design field create exquisite apps will make solid impression among clients.",
-                      imageurl: "images/mad.jpg",
-                      iconurl: "images/icons/appdev.png",
+                      imageurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/mad.jpg?updatedAt=1749366035807",
+                      iconurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/appdev.png?updatedAt=1749366077824",
                     ),
                     SizedBox(height: 30),
                     Servicesdivformobile(
                       headingtext: "Digital Marketing",
                       contenttext:
                           "Providing platform subject to experience with powerful cycle of project development with cost effective and time frame.",
-                      imageurl: "images/digimarket.jpg",
-                      iconurl: "images/icons/digitalmarketing.png",
+                      imageurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/digimarket.jpg?updatedAt=1749366010461",
+                      iconurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/digitalmarketing.png?updatedAt=1749366077862",
                     ),
                     SizedBox(height: 30),
                     Servicesdivformobile(
                       headingtext: "Branding",
                       contenttext:
                           "We manage the overall promotional activities, listings outside the website, content distribution, quality link building, product or service reviews etc.",
-                      imageurl: "images/branding.jpg",
-                      iconurl: "images/icons/brand.png",
+                      imageurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/branding.jpg?updatedAt=1749365998915",
+                      iconurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/brand.png?updatedAt=1749366078039",
                     ),
                     SizedBox(height: 30),
                     Servicesdivformobile(
                       headingtext: "Search Engine Optimization",
                       contenttext:
                           "Boost your website’s visibility and ranking on search engines with our expert SEO services. We use proven strategies including keyword optimization, quality content creation, and technical enhancements to drive organic traffic and help your business reach its target audience effectively.",
-                      imageurl: "images/SEO.jpg",
-                      iconurl: "images/icons/seo.png",
+                      imageurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/SEO.jpg?updatedAt=1749366054507",
+                      iconurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/seo.png?updatedAt=1749366085928",
                     ),
                     SizedBox(height: 30),
                     Servicesdivformobile(
                       headingtext: "Social Media Management",
                       contenttext:
                           "We help you build and maintain a strong presence across social media platforms, engaging your audience and growing your brand online.",
-                      imageurl: "images/SMM.jpg",
-                      iconurl: "images/icons/socialmedia.png",
+                      imageurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/SMM.jpg?updatedAt=1749366062049",
+                      iconurl:
+                          "https://ik.imagekit.io/rrkrish13112001/images/icons/socialmedia.png?updatedAt=1749366086124",
                     ),
                   ],
                 ),
