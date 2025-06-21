@@ -38,6 +38,8 @@ dependencies:
   flutter_svg: ^2.1.0
   google_maps_flutter: ^2.12.2
   url_launcher: ^6.3.1
+  firebase_core: ^3.14.0
+  firebase_analytics: ^11.5.0
 
 dev_dependencies:
   flutter_test:
