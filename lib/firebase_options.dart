@@ -61,4 +61,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'graphify-website-analytics.firebasestorage.app',
     measurementId: 'G-3N0DEZMLDL',
   );
+
 }
